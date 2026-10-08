@@ -1,10 +1,11 @@
 {
   "database": {
     "name": "GAWUSH_DATABASE",
-    "user": "cargaAWS810",
-    "password": "aws810",
+    "user": "lectorVAG",
+    "password": "lector",
     "host": "10.30.19.5",
     "port": 5432,
+    "tabla": "Picarro_G2401_Sync",
     "last_date": "2025-09-01"
   },
   "ftp": {
@@ -14,9 +15,9 @@
     "dir": "/home/ftp/uploaderdata"
   },
   "carpetas": {
-    "destino": "C:\\Users\\condo\\PycharmProjects\\gen_AWS_data_vaisala810\\AWS810",
+    "destino": "\\\\PC\\almacenamiento\\PICARRO\\PICARROG2401\\Datos\\Crudos",
     "recopilado": "Recopilado",
     "cargado": "Cargado",
-    "nombre": "USH_AWS2_"
+    "nombre": "USH_PICARROG2401_"
   }
 }
