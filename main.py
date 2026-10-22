@@ -97,7 +97,12 @@ def procesar_archivos():
         if df_dia.empty:
             continue
         #quita los sufijos sync.
-        df_dia.columns = [col.removesuffix('_sync') for col in df_dia.columns]
+        sufijo = '_sync'
+
+        df_dia.columns = [
+            col[:-len(sufijo)] if col.endswith(sufijo) else col
+            for col in df_dia.columns
+        ]
 
         output_path = os.path.join(target_dir, folder_conf['nombre'] + fecha.strftime("%Y%m%d.csv"))
         # crear la carpeta si no existe
