@@ -1,0 +1,51 @@
+########################################################################
+######################### PARA ARCHIVO MINUTAL #########################
+########################################################################
+# Instrumento: Picarro
+# Modelo: G5310
+# Número de serie: JKADS5150
+# Número de patrimonio SMN: 024029
+# Estación: Ushuaia, USH, Tierra del Fuego (GAW Global, WIGOS 0-20008-0-USH)
+# Coordenadas de ubicación instrumento:  -54.8485 -68.310694 18 m snm (54° 50' 54.6" S, 68° 18' 38.5" W)
+# Inicio de mediciones: diciembre de 2023 [verificar]
+# Frecuencia de medición: 3 seg (avg 1 min)
+# Fecha de última auditoría EMPA: marzo de 2026
+# Escala de calibración: CO WMO X2014A; N2O WMO X2006A (https://gml.noaa.gov/ccl/co_scale.html, https://gml.noaa.gov/ccl/n2o_scale.html)
+# Investigador responsable: María Emilia Ruiz (meruiz@smn.gob.ar - Servicio Meteorológico Nacional); Lino Condorí (lcondori@smn.gob.ar - Servicio Meteorológico Nacional)
+#---------------------------------------------------------------------------
+# Parámetros relevantes: P cavidad nominal 100 Torr; T cavidad nominal 40 °C
+#
+# Información clave:
+# Secador Nafion Perma Pure PD-50T-12MPS (SN:123024-04 NPat:024579) , conexión en modo reflujo; además el analizador usa corrección por H2O de fábrica (valores dry)
+# Refrigerante del láser: Koolance 702 Liquid Coolant (LIQ-702BU-B alto rendimiento, azul);
+# Bomba de Vacio: Picarro Num Pat: 024030
+# Caudal de muestra [completar] lpm;
+# Línea de entrada propia, material Synflex 1300 de 3/8", 7 m de largo total (3 m en el laboratorio, 1 m en el entretecho, 3 m en el exterior por encima del techo);
+# MPV puerto 0 = aire ambiente, puertos de calibración
+#   35 = estabilización tanque de calibración 1 (flushing); 3 = tanque de calibración #1 130821_CB10215
+#   37 = estabilización tanque de calibración 2 (flushing); 5 = tanque de calibración #2 210406_CC726927
+#   41 = estabilización tanque de calibración 3 (flushing); 9 = tanque de calibración #3 201209_CC726931
+#---------------------------------------------------------------------------
+# Nivel de procesamiento: L0+ (promedio minutal de L0, sin calibración ni correcciones ni descarte de datos)
+# Script de procesamiento: [nombre completar], versión [completar], GitLab SMN [ruta completar]
+# Valor faltante: [completar]
+#---------------------------------------------------------------------------
+# Descripción de variables:
+# DateTime: YYYY-MM-dd HH:mm:ss, fecha y hora en UTC, inicio del minuto promediado $*primer valor*&N
+# CO_dry: ppb, fracción molar de CO en aire seco $*promedio*&3
+# N2O_dry: ppb, fracción molar de N2O en aire seco $*promedio*&4
+# N: , cantidad de datos de 3 seg promediados en el minuto (máx. 20) $*agregar*&0
+# SD_CO_dry: ppb, desviación estándar de CO_dry en el minuto $*agregar*&3
+# SD_N2O_dry: ppb, desviación estándar de N2O_dry en el minuto $*agregar*&4
+# CO: ppb, fracción molar de CO sin corrección por H2O $*promedio*&3
+# N2O: ppb, fracción molar de N2O sin corrección por H2O $*promedio*&4
+# H2O: ppm, vapor de agua residual luego del secador Nafion [verificar unidad] $*promedio*&2
+# CavityPressure: Torr, presión de la cavidad óptica $*promedio*&4
+# CavityTemp: °C, temperatura de la cavidad óptica $*promedio*&4
+# OutletValve: cuentas DAC, apertura de la válvula de salida (control de presión) $*promedio*&1
+# DasTemp: °C, temperatura de la electrónica del instrumento (sigue a la temperatura de la sala) $*promedio*&4
+# ALARM_STATUS: , código de alarmas del instrumento  $*mayoria*&0
+# INST_STATUS: , código de estado del instrumento  $*mayoria*&0
+# MPVPosition: , posición de la válvula multipuerto (valor más frecuente en el minuto) $*mayoria*&0
+#---------------------------------------------------------------------------
+# Comentarios:
